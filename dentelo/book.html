@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Data Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<h2>User Data Form</h2>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="date">Date of Appointment:</label>
+		<input type="date" id="date" name="date" required>
+
+		<label for="service">Service:</label>
+		<select id="service" name="service" required>
+			<option value="">Select a service</option>
+			<option value="Root Canal">Root Canal</option>
+			<option value="Cosmetic Teeth">Cosmetic Teeth</option>
+			<option value="Alignment Teeth">Alignment Teeth</option>
+			<option value="Oral Hygiene">Oral Hygiene</option>
+			<option value="Cavity Inspection">Cavity Inspection</option>
+		</select>
+
+		<input type="submit" value="Submit">
+	</form>
+	<script src="\assets\js\script.js"></script>
+</body>
+</html>
