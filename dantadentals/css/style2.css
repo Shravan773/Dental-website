@@ -1,0 +1,105 @@
+/* Styles for admin login form */
+
+#admin-login {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #admin-login h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #admin-login label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #admin-login input[type="text"],
+  #admin-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #admin-login button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  #admin-login button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+
+  .form-c {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1; /* added z-index */
+  }
+  
+  /* Styles for dashboard table */
+  
+  #dashboard-table {
+    margin: auto;
+    margin-top: 50px;
+    border-collapse: collapse;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #dashboard-table th,
+  #dashboard-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  #dashboard-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  #dashboard-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #dashboard-table tr:hover {
+    background-color: #ddd;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    z-index: 0; /* lower z-index than .form-container */
+  }
+  

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+html {
+  background-color: rgb(231, 202, 113);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-mvv {
+  padding: 0;
+  margin: 0;
+}
+
+.mvv-container {
+  max-width: 90%;
+  margin: 120px auto 0;
+}
+
+.mvv-container .mvv-block {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mvv-container .mvv-block .aboutimage {
+  flex: 0 0 auto;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  line-height: 0;
+}
+
+.mvv-container .mvv-block .aboutimage img {
+  width: 100%;
+
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.mvv-container .mvv-block .aboutimage:hover img {
+  transform: scale(1.05);
+}
+
+.mvv-container .mvv-block .aboutcontent {
+  flex: 0 0 auto;
+  width: calc(100% - 400px);
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.mvv-container .mvv-block .aboutcontent h5 {
+  font-weight: bolder;
+  font-size: 22px;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.mvv-container .mvv-block .aboutcontent p {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mvv-container .mvv-block:nth-child(odd) .aboutimage {
+    order: 1;
+  }
+
+  .mvv-container .mvv-block:nth-child(even) .aboutimage {
+    order: 2;
+  }
+
+  .mvv-container .mvv-block:nth-child(odd) .aboutcontent {
+    order: 2;
+    padding-left: 30px;
+  }
+
+  .mvv-container .mvv-block:nth-child(even) .aboutcontent {
+    order: 1;
+    padding-right: 30px;
+  }
+}
